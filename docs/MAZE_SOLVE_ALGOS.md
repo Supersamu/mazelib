@@ -2,7 +2,7 @@
 
 ##### Go back to the main [README](../README.md)
 
-Because users are allowed to create and modify mazes in such a great variety of way, the `mazelib` library will only support universal maze-solving algorithms. That is, `mazelib` will not implement any maze-solving algorithm that can't, for instance, solve imperfect mazes (those with loops or more than one solution). Otherwise, the user will have to know internal details about the maze generating / soliving algorithms they use, and if they are compatible.
+Because users are allowed to create and modify mazes in such a great variety of way, the `mazelib` library will only support universal maze-solving algorithms. That is, `mazelib` will not implement any maze-solving algorithm that can't, for instance, solve imperfect mazes (those with loops or more than one solution). Otherwise, the user will have to know internal details about the maze generating / solving algorithms they use, and if they are compatible.
 
 
 ## Chain Algorithm
@@ -14,7 +14,7 @@ Because users are allowed to create and modify mazes in such a great variety of 
     1. If you bump into a wall, you have to go around.
     2. Send out backtracking robots in the 1 or 2 open directions.
     3. If the robot can find your new point, continue on.
-    4 .If the robot intersects your line at a point that is further down stream, pick up the path there.
+    4. If the robot intersects your line at a point that is further down stream, pick up the path there.
 3. repeat step 2 until you are at the end.
     1. If both robots return to their original location and direction, the maze is unsolvable.
 
@@ -72,7 +72,7 @@ A mouse just wanders randomly around the maze until it finds the cheese.
 
 Random mouse may never finish. Technically. It is certainly inefficient in time, but very efficient in memory.
 
-I highly recommen that this solver run in the default pruning mode, to get rid of all unnecessary branches, and backtracks, in the solution.
+I highly recommend that this solver run in the default pruning mode, to get rid of all unnecessary branches, and backtracks, in the solution.
 
 
 ## Recursive Backtracker
